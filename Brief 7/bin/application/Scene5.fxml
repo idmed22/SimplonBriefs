@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Scene1Controller">
+   <children>
+      <TextField fx:id="id" layoutX="99.0" layoutY="46.0" />
+      <Label layoutX="29.0" layoutY="48.0" text="ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="81.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="117.0" text="Prenom">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="153.0" text="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="191.0" text="Adress">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="228.0" text="City">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="260.0" text="Country">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="99.0" layoutY="81.0" />
+      <TextField fx:id="prenom" layoutX="99.0" layoutY="115.0" />
+      <TextField fx:id="email" layoutX="99.0" layoutY="152.0" />
+      <TextField fx:id="adress" layoutX="99.0" layoutY="188.0" />
+      <TextField fx:id="city" layoutX="99.0" layoutY="223.0" />
+      <TextField fx:id="country" layoutX="99.0" layoutY="258.0" />
+      <Button layoutX="137.0" layoutY="305.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="74.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="282.0" layoutY="37.0" prefHeight="249.0" prefWidth="737.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="email" prefWidth="158.0" text="Email" />
+            <TableColumn fx:id="adress" prefWidth="184.0" text="Adress" />
+            <TableColumn fx:id="city" prefWidth="76.0" text="City" />
+            <TableColumn fx:id="country" prefWidth="93.0" text="Country" />
+        </columns>
+      </TableView>
+      <Button layoutX="26.0" layoutY="353.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed" text="Back To Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
