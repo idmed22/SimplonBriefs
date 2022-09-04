@@ -8,6 +8,7 @@
 		<version>2.7.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.stc</groupId>
 	<artifactId>stc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -113,6 +114,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>docker-jenkins-integration</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
