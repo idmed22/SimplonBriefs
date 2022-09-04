@@ -114,7 +114,7 @@
 	</dependencies>
 
 	<build>
-	<finalName>docker-jenkins-integration</finalName>
+	<finalName>brief15-STC</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
