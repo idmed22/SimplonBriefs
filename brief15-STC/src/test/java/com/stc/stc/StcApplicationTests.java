@@ -37,6 +37,7 @@ class StcApplicationTests {
 	 * 
 	 * @Autowired private UserService userService;
 	 */
+	/*
 	 @Autowired
 	 private AdminRepository adminRepository;
 	 
@@ -48,7 +49,7 @@ class StcApplicationTests {
 	 
 	 @Autowired
 	 private ActivityService activityService;
-  
+     */
      
      
    
@@ -125,11 +126,11 @@ class StcApplicationTests {
 			 * activity.setName("jakarta EE"); activity.setType("Event ! ! !");
 			 * activityRepository.save(activity); }
 			 */
-         
-	     
+        
+	     /*
 	     @Test 
 	     void TestDeleteActivity() {
 	    	 activityService.delete(2L);
 	     }
-	
+	     */
 }
