@@ -1,4 +1,7 @@
 FROM openjdk:17
-COPY target/
 EXPOSE 8080
+ADD target/brief15-stc brief15-stc.jar
+ENTRYPOINT [ "java","-jar", "brief15-stc.jar" ]
+
+
 
