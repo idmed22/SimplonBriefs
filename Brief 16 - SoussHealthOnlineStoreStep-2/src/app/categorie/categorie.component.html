@@ -1,14 +1,25 @@
 <div class="container mt-4">
-    <nav class="p-2 m-2 border border-info">
-        <button  class="btn btn btn-outline-info">New Categorie</button>
-    </nav>
-    <ng-template #errors>
-        <div class="text-danger"></div>
-    </ng-template>
-<div class="card" >
-        <div class="card-header"> Categories List</div>
-        <div class="card-body">
-            <form >
+    <h5 class="font-monospace offset-md-1">Add Categorie</h5>
+    <form  class="col-md-6 offset-md-1">  
+        <div class="form-group"> 
+         <label class="font-monospace">Nom</label>
+       <select [(ngModel)]="saveCategorie.nom" class="form-control"   name = "nom" type="select" matNativeControl required>
+         <option>Antibiotique</option>
+         <option>Compléments alimentaires</option> -->
+       </select>
+       
+       </div>
+
+       <button *ngIf="!myCondition" (click)="handleAddCategorie()" class=" btn btn-info mt-2 font-monospace">save</button>
+     
+       <button *ngIf="myCondition" (click)="UpdateCategorie()" class="btn btn-warning mt-2 font-monospace">Update</button>
+     
+     </form>
+    
+<!-- <div class="card" > -->
+        <!-- <div class="card-header"> Categories List</div> -->
+        <div class="card-body offset-md-">
+            <!-- <form >
                 <div class="input-group">
                     <label class="input-group-text">Keyword:</label>
                     <input type="text" class="form-control" formControlName ="Keyword">
@@ -16,35 +27,32 @@
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
-            </form>
-            <table class="table">
+            </form> -->
+            <table class="table mt-4">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
-                        
-                       
-                       
+                        <th></th>
+                        <th></th>
+                           
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                       <td></td>
-                       <td></td>
+                    <tr *ngFor="let c of categories">
+                       <td>{{c.id}}</td>
+                       <td>{{c.nom}}</td>
 
-
-                       <td>
-                        <button class="btn btn-danger">
+                    <td>
+                        <button (click)="handleDeleteCategorie(c.id)" class="btn btn-danger">
                             <i class="bi bi-trash"></i>
                         </button>
-                       </td>
-                       <td>
-                        <button class="btn btn-success">
+                    </td>
+                    <td>
+                        <button (click)="handleUpdateBtn(c)" class="btn btn-warning">
                             <i class="bi bi-pencil-square"></i>
                         </button>
-                       </td>
-                       
-                    
+                    </td>
                     </tr>
                 </tbody>
 
@@ -59,4 +67,6 @@
 
     </div>
 
-</div>
+<!-- </div> -->
+
+
