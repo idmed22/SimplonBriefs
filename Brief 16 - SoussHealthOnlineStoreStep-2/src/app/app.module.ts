@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { ProduitComponent } from './produit/produit.component';
 import { CommandeComponent } from './commande/commande.component';
 import { CategorieComponent } from './categorie/categorie.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,16 @@ import { CategorieComponent } from './categorie/categorie.component';
     LoginComponent,
     ProduitComponent,
     CommandeComponent,
-    CategorieComponent
+    CategorieComponent,
+    
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
    
   ],
   providers: [],
