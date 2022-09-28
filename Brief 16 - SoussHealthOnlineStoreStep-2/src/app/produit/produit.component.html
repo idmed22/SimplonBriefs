@@ -27,20 +27,20 @@
                         <th>Date Expiration</th>
                         <th>Quantite stock</th>
                         <th>Categorie</th>
-                        <th>Clients</th>
+                        
                        
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                       <td></td>
-                       <td></td>
-                       <td></td>
-                       <td></td>
-                       <td></td>
-                       <td></td>
-                       <td></td>
-                       <td></td>
+                    <tr *ngFor="let p of produits">
+                       <td>{{p.id}}</td>
+                       <td>{{p.nom}}</td>
+                       <td>{{p.prix}}</td>
+                       <td>{{p.description}}</td>
+                       <td>{{p.dateExpiration}}</td>
+                       <td>{{p.quantiteStock}}</td>
+                       <td>{{p.categorieId}}</td>
+                       
                        <td></td>
                        
                        <td>

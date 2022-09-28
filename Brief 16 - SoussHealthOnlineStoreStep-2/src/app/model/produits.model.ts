@@ -1,10 +1,9 @@
 export interface AppProd{
-    userId : number;
+    id : number;
     nom : string;
     prix : number;
     description : string;
-    date_expiration : Date;
-    quantite_stock : number;
+    dateExpiration : Date;
+    quantiteStock : number;
     categorieId : number;
-    clientsId : number;
 }
